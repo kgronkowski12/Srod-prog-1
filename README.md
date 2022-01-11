@@ -1,2 +1,3 @@
-# Srod-prog-1
-Projekt na środowisko programisty
+Krystian Gronkowski
+
+Projekt będzie poradnikiem programowania w języku C# dla początkujących.
