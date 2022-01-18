@@ -1,8 +1,16 @@
 \documentclass[a4paper]{article}
 
+\usepackage{amsthm}
+\newtheorem{theorem}{Twierdzenie}[section]
+\theoremstyle{definition}
+\newtheorem{zadanie}[theorem]{Zadanie}
+\newtheorem{definicja}[theorem]{Definicja}
+
 \usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{listings}
+\usepackage{tikz}
+\usetikzlibrary{matrix}
 \graphicspath{ {./} }
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
@@ -43,6 +51,27 @@
 
 \begin{document}
 
+\tikzset{ 
+    table/.style={
+        matrix of nodes,
+        row sep=-\pgflinewidth,
+        column sep=-\pgflinewidth,
+        nodes={
+            rectangle,
+            draw=black,
+            align=center
+        },
+        minimum height=1.5em,
+        text depth=0.5ex,
+        text height=2ex,
+        nodes in empty cells,
+%%
+        every even column/.style={
+            nodes={fill=gray!20}
+        }
+    }
+}
+
 \maketitle
 \tableofcontents
 
@@ -50,12 +79,12 @@
 \section{Hello, world!}
 \subsection{Konfigurowanie kompilatora}
 Zanim zaczniemy programować, zaintalujmy kompiler, aby móc otworzyć program który napiszemy.
-\\\\W Linuxie mcs można zainstalować za pomocą komend:
+\\\\W Linuxie kompilatorm mcs można zainstalować za pomocą komend:
 \\\\sudo apt-get update
 \\sudo apt-get install mono-mcs
 \\\\Natomiast w Windowsie należy najpierw zainstalować .NET Framework, a potem dodać ścieżkę instalacji w zmiennej środowiskowej "PATH"
 \\\\Alternatywnie, jeżeli ktoś nie chce instalować kompilera, można użyć jednego z wielu edytorów C\# online, np: \url{https://www.onlinegdb.com/online_csharp_compiler}
-\subsection{Console.WriteLine}
+\subsection{Console.WriteLine i Console.Readline}
 Nadszedł czas na stworzenie pierwszego programu!
 \\Struktura piku źródłowego C\# wygląda następująco:
 \lstset{language=C}
@@ -68,9 +97,65 @@ class NazwaPliku {
   }
 }
 \end{lstlisting}
-\subsection{Console.ReadLine}
+\\	\\\textbf{Console.WriteLine()} jest funkcją wyświetlającą tekst na ekranie (jak printf w języku C), a \textbf{Console.ReadLine()} jest używany do wczytywania tekstu z klawiatury (jak scanf).
+\\Przykładowy program wykorzystujący te dwie funkcje aby wyświetlić imie użytkownika na ekranie:
+\lstset{language=C}
+\begin{lstlisting}[frame=single]
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Jak sie nazywasz?");
+        string imie = Console.ReadLine();
+        Console.WriteLine ("Witaj, "+imie+"!");
+    }
+}
+\end{lstlisting}
+\subsection{Konwersja danych}
+Należy wziąć pod uwagę, że \textbf{Console.ReadLine()} zawsze wczytuje wartość string, gdybyśmy chcieli aby program wczytywał liczbę zamiast imienia (np wiek), musielibyśmy przekonwertować string do wartości int.\\
+Na szczęście jest do tego wbudowana funkcja \textbf{Convert.ToInt32(string)}. Przykład jej użycia:\\
+\begin{lstlisting}[frame=single]
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Ile masz lat?");
+        int wiek = Convert.ToInt32(Console.ReadLine());
+	      if(wiek>17){
+        	  Console.WriteLine("Jestes pelnoletni");
+	      }
+	      else{
+		        Console.WriteLine("Nie jestes pelnoletni");
+	      }
+    }
+}
+\end{lstlisting}
 \section{Operowanie na danych}
 \section{Tablice i listy}
+\subsection{Tablice wielowymiarowe}
+Najprostszy sposób patrzenia na tablice dwuwymiarową tablica[k][w] jest wyobrażenie sobie tabelki o k kolumnach i w wierszach.\\
+Dla przykładu, wyobraźmy sobie tablicę dwuwymiarową [5][3] wypełnioną w następujący sposób:
+\\\\
+\begin{tikzpicture}
+
+\matrix (first) [table,text width=6em]
+{
+1 & 4 & 6 & 2 & 0\\
+2 & 7 & 7 & 0 & 3\\
+-15 & 55 & 26 & 0 & 330\\
+};
+\end{tikzpicture}\\
+tablica[1][0] nawiązuje do liczby w 2 kolumnie i w 1 wierszu (pamiętaj że tablica zaczynają się od 0!), czyli do liczby 4. W ten sam sposób tablica[2][2] dałaby wynik 26, a tablica[0][0] 1.
+\begin{zadanie}
+\\Stwórz tablicę dwuwymiarową[10][10] i wypełnij ją tabliczką mnożenia.
+\end{zadanie}
+\subsection{Listy}
+Listy działają jak tablice, ale nie mają zadeklarowanej wielkości. Można dodawać nowe elementy do listy i usuwać stare gdy tylko się chce. Jest to bardzo użyteczne, gdy chcemy przechować jakieś elementy, ale nie wiemy jak jest ich dużo. Na przykład gdy chcemy przechować wszystkie litery jakiegoś słowa wpisanego przez użytkownika.
+
 \section{Losowanie liczb}
 \pagebreak
 \begin{thebibliography}{9}

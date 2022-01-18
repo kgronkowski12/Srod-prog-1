@@ -1,7 +1,9 @@
 \contentsline {section}{\numberline {1}Hello, world!}{2}{section.1}
 \contentsline {subsection}{\numberline {1.1}Konfigurowanie kompilatora}{2}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Console.WriteLine}{2}{subsection.1.2}
-\contentsline {subsection}{\numberline {1.3}Console.ReadLine}{2}{subsection.1.3}
-\contentsline {section}{\numberline {2}Operowanie na danych}{2}{section.2}
-\contentsline {section}{\numberline {3}Tablice i listy}{2}{section.3}
-\contentsline {section}{\numberline {4}Losowanie liczb}{2}{section.4}
+\contentsline {subsection}{\numberline {1.2}Console.WriteLine i Console.Readline}{2}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Konwersja danych}{2}{subsection.1.3}
+\contentsline {section}{\numberline {2}Operowanie na danych}{3}{section.2}
+\contentsline {section}{\numberline {3}Tablice i listy}{3}{section.3}
+\contentsline {subsection}{\numberline {3.1}Tablice wielowymiarowe}{3}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Listy}{3}{subsection.3.2}
+\contentsline {section}{\numberline {4}Losowanie liczb}{3}{section.4}

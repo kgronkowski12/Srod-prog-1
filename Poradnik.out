@@ -1,7 +1,9 @@
 \BOOKMARK [1][-]{section.1}{Hello, world!}{}% 1
 \BOOKMARK [2][-]{subsection.1.1}{Konfigurowanie kompilatora}{section.1}% 2
-\BOOKMARK [2][-]{subsection.1.2}{Console.WriteLine}{section.1}% 3
-\BOOKMARK [2][-]{subsection.1.3}{Console.ReadLine}{section.1}% 4
+\BOOKMARK [2][-]{subsection.1.2}{Console.WriteLine i Console.Readline}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Konwersja danych}{section.1}% 4
 \BOOKMARK [1][-]{section.2}{Operowanie na danych}{}% 5
 \BOOKMARK [1][-]{section.3}{Tablice i listy}{}% 6
-\BOOKMARK [1][-]{section.4}{Losowanie liczb}{}% 7
+\BOOKMARK [2][-]{subsection.3.1}{Tablice wielowymiarowe}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.2}{Listy}{section.3}% 8
+\BOOKMARK [1][-]{section.4}{Losowanie liczb}{}% 9
