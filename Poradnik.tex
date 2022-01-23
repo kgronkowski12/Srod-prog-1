@@ -78,12 +78,12 @@
 \pagebreak
 \section{Hello, world!}
 \subsection{Konfigurowanie kompilatora}
-Zanim zaczniemy programować, zaintalujmy kompiler, aby móc otworzyć program który napiszemy.
-\\\\W Linuxie kompilatorm mcs można zainstalować za pomocą komend:
+Zanim zaczniemy programować musimy zaintalować kompilator, aby być w stanie otworzyć program który napiszemy.
+\\\\W Linuxie kompilator mcs można zainstalować za pomocą komend:
 \\\\sudo apt-get update
 \\sudo apt-get install mono-mcs
 \\\\Natomiast w Windowsie należy najpierw zainstalować .NET Framework, a potem dodać ścieżkę instalacji w zmiennej środowiskowej "PATH"
-\\\\Alternatywnie, jeżeli ktoś nie chce instalować kompilera, można użyć jednego z wielu edytorów C\# online, np: \url{https://www.onlinegdb.com/online_csharp_compiler}
+\\\\Alternatywnie, jeżeli ktoś nie chce instalować kompilatora, można użyć jednego z wielu edytorów C\# online, np: \url{https://www.onlinegdb.com/online_csharp_compiler}
 \subsection{Console.WriteLine i Console.Readline}
 Nadszedł czas na stworzenie pierwszego programu!
 \\Struktura piku źródłowego C\# wygląda następująco:
@@ -115,7 +115,7 @@ public class HelloWorld
 \end{lstlisting}
 \subsection{Konwersja danych}
 Należy wziąć pod uwagę, że \textbf{Console.ReadLine()} zawsze wczytuje wartość string, gdybyśmy chcieli aby program wczytywał liczbę zamiast imienia (np wiek), musielibyśmy przekonwertować string do wartości int.\\
-Na szczęście jest do tego wbudowana funkcja \textbf{Convert.ToInt32(string)}. Przykład jej użycia:\\
+Na szczęście jest do tego wbudowana funkcja \textbf{Int32.Parse(string)}. Przykład jej użycia:\\
 \begin{lstlisting}[frame=single]
 using System;
 
@@ -124,7 +124,7 @@ public class HelloWorld
     public static void Main(string[] args)
     {
         Console.WriteLine("Ile masz lat?");
-        int wiek = Convert.ToInt32(Console.ReadLine());
+        int wiek = Int32.Parse(Console.ReadLine());
 	      if(wiek>17){
         	  Console.WriteLine("Jestes pelnoletni");
 	      }
@@ -135,7 +135,82 @@ public class HelloWorld
 }
 \end{lstlisting}
 \section{Operowanie na danych}
+\subsection{String.Contains}
+\textbf{String.Contains()} jest bardzo użyteczną funkcją, która sprawdza czy gdziekolwiek w jakimś łańcuchu można znaleźć inny łańcuch. Zwraca wartość boolowską. Przykładem jego zastosowania jest sprawdzenie czy w jakimś słowie występuje litera 'a' :\\
+\begin{lstlisting}[frame=single]
+using System;
+
+class Contains {
+    static void Main() {
+    	Console.WriteLine("Wpisz slowo bez litery a");
+        string x = Console.ReadLine();
+        if(x.Contains('a')){
+        	Console.WriteLine("W tym slowie nie ma litery a.");
+        }
+        else{
+        	Console.WriteLine("W tym slowie jest litera a.");
+        }
+    }
+}
+\end{lstlisting}
+\subsection{String.Replace}
+\textbf{String.Replace()} zastępuje wszystkie wystąpienia łancucha A innym łańcuchem B.\\
+\begin{lstlisting}[frame=single]
+using System;
+
+class Replace {
+    static void Main() {
+        string x = "Ala ma kota.";
+        x = x.Replace("kota","psa");
+        Console.WriteLine(x);
+        // W konsoli zostanie wyswietlone "Ala ma psa."
+    }
+}
+\end{lstlisting}
+\subsection{String.Split}
+\textbf{String.Split()} rozdziela łańcuch na tablicę mniejszych łańcuchów rozdzielonych za pomocą łańcucha podanego podczas wywoływania funkcji. Bardzo użyteczne jeżeli chcemy odczytać dane rozdzielonych za pomocą nowej linijki ('\n') albo spacji. Przykład użycia:\\
+\begin{lstlisting}[frame=single]
+using System;
+
+class Split {
+    static void Main() {
+        Console.WriteLine("Wpisz swoje imie i nazwisko");
+        string x = Console.Readline();
+        string[] input = x.Split(' ');
+        string imie = input[0];
+        string nazwisko = input[1];
+        Console.WriteLine("Dzien dobry, Pani/e " + nazwisko);
+    }
+}
+\end{lstlisting}
+\begin{zadanie}
+\\Poproś użytkownika o wpisanie jakiegoś zdania, a potem wyświetl je ze słowami w odwrotnej kolejności.
+\\\textrm{Ala ma kota \rightarrow \textrm{kota  ma  Ala}}
+\end{zadanie}
+\begin{zadanie}
+\\Poproś użytkownika o wpisanie jakiegoś słowa i wyświetl wszystkie litery które w nim nie występują.
+\end{zadanie}
+\pagebreak
 \section{Tablice i listy}
+\subsection{Tablice jednowymiarowe}
+Tablica to zbiór uporządkowanych elementów tego samego typu. Każdy element można wyczytać podając numer jego indeksu. Przykład zastosowania tablicy aby wyczytać ile razy każda cyfra występuje w jakiejś liczbie.\\
+\begin{lstlisting}[frame=single]
+using System;
+
+class HelloWorld {
+    static void Main() {
+    	int[] tablica = new int[10];
+        string liczba = "1049284883920457162047859300018306";
+        for(int i=0;i<liczba.Length;i++){
+        	tablica[Int32.Parse(liczba[i].ToString())]+=1;
+        }
+        for(int i=0;i<10;i++){
+        	Console.WriteLine("Liczba " + i + " wystepuje " + tablica[i] + " razy.");
+        }
+    }
+}
+
+\end{lstlisting}
 \subsection{Tablice wielowymiarowe}
 Najprostszy sposób patrzenia na tablice dwuwymiarową tablica[k][w] jest wyobrażenie sobie tabelki o k kolumnach i w wierszach.\\
 Dla przykładu, wyobraźmy sobie tablicę dwuwymiarową [5][3] wypełnioną w następujący sposób:
@@ -154,8 +229,30 @@ tablica[1][0] nawiązuje do liczby w 2 kolumnie i w 1 wierszu (pamiętaj że tab
 \\Stwórz tablicę dwuwymiarową[10][10] i wypełnij ją tabliczką mnożenia.
 \end{zadanie}
 \subsection{Listy}
-Listy działają jak tablice, ale nie mają zadeklarowanej wielkości. Można dodawać nowe elementy do listy i usuwać stare gdy tylko się chce. Jest to bardzo użyteczne, gdy chcemy przechować jakieś elementy, ale nie wiemy jak jest ich dużo. Na przykład gdy chcemy przechować wszystkie litery jakiegoś słowa wpisanego przez użytkownika.
+Listy działają jak tablice, ale nie mają zadeklarowanej wielkości. Można dodawać nowe elementy do listy i usuwać stare gdy tylko się chce. Jest to bardzo użyteczne, gdy chcemy przechować jakieś elementy, ale nie wiemy jak jest ich dużo. Na przykład gdy chcemy wczytywać liczby podawane przez użytkownika, dopóki nie wpisze 0.
+\begin{lstlisting}[frame=single]
+using System;
+using System.Collections.Generic; //Biblioteka w ktorej znajduja sie listy
 
+class HelloWorld {
+    static void Main() {
+        List<int> ints = new List<int>();
+        while(true){
+            int x = Int32.Parse(Console.ReadLine());
+            if(x!=0){
+                ints.Add(x);   
+            }
+            else{
+                break;
+            }
+        }
+        foreach(int x in ints){
+            Console.WriteLine(x);
+        }
+    }
+}
+\end{lstlisting}
+\pagebreak
 \section{Losowanie liczb}
 \pagebreak
 \begin{thebibliography}{9}
