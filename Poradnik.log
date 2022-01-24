@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.1.23)  23 JAN 2022 17:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.1.23)  24 JAN 2022 20:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -574,7 +574,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip52
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 46.
+Package hyperref Info: Option `colorlinks' set `true' on input line 47.
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
@@ -584,24 +584,24 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 (./Poradnik.aux)
 \openout1 = `Poradnik.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -663,7 +663,7 @@ ABD: EveryShipout initializing macros
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box60
-Package hyperref Info: Link coloring ON on input line 52.
+Package hyperref Info: Link coloring ON on input line 53.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -675,38 +675,38 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count293
 )
-LaTeX Info: Redefining \ref on input line 52.
-LaTeX Info: Redefining \pageref on input line 52.
-LaTeX Info: Redefining \nameref on input line 52.
+LaTeX Info: Redefining \ref on input line 53.
+LaTeX Info: Redefining \pageref on input line 53.
+LaTeX Info: Redefining \nameref on input line 53.
 
 (./Poradnik.out) (./Poradnik.out)
 \@outlinefile=\write4
 \openout4 = `Poradnik.out'.
 
 LaTeX Font Info:    Trying to load font information for OML+plm on input line 7
-6.
+7.
 
 (/usr/share/texlive/texmf-dist/tex/latex/polski/omlplm.fd
 File: omlplm.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    Trying to load font information for OMS+plsy on input line 
-76.
+77.
 
 (/usr/share/texlive/texmf-dist/tex/latex/polski/omsplsy.fd
 File: omsplsy.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    Trying to load font information for OMX+plex on input line 
-76.
+77.
 
 (/usr/share/texlive/texmf-dist/tex/latex/polski/omxplex.fd
 File: omxplex.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <12> on input line 76.
+(Font)              <12> on input line 77.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <8> on input line 76.
+(Font)              <8> on input line 77.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <6> on input line 76.
+(Font)              <6> on input line 77.
  (./Poradnik.toc
 LaTeX Font Info:    External font `plex10' loaded for size
 (Font)              <10> on input line 2.
@@ -723,27 +723,27 @@ LaTeX Font Info:    External font `plex10' loaded for size
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Trying to load font information for OT4+cmtt on input line 
-86.
+87.
 
 (/usr/share/texlive/texmf-dist/tex/latex/polski/ot4cmtt.fd
 File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 81--87
+Underfull \hbox (badness 10000) in paragraph at lines 82--88
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--87
+Underfull \hbox (badness 10000) in paragraph at lines 82--88
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--87
+Underfull \hbox (badness 10000) in paragraph at lines 82--88
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--87
+Underfull \hbox (badness 10000) in paragraph at lines 82--88
 
  []
 
@@ -760,7 +760,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.100 \\	\\
+l.101 \\	\\
            \textbf{Console.WriteLine()} jest funkcją wyświetlającą tekst...
 
 ? 
@@ -771,32 +771,32 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.100 \\	\\\textbf
+l.101 \\	\\\textbf
                   {Console.WriteLine()} jest funkcją wyświetlającą tekst...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--119
+Underfull \hbox (badness 10000) in paragraph at lines 118--120
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--140
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
 
  []
 
 ! Undefined control sequence.
-l.171 ...zdzielonych za pomocą nowej linijki ('\n
+l.172 ...zdzielonych za pomocą nowej linijki ('\n
                                                   ') albo spacji. Przykład ...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--172
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
 
  []
 
@@ -807,20 +807,20 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.187 \\P
+l.188 \\P
          oproś użytkownika o wpisanie jakiegoś zdania, a potem wyświetl ...
 
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.188 ... kota \rightarrow \textrm{kota  ma  Ala}}
+l.189 ... kota \rightarrow \textrm{kota  ma  Ala}}
                                                   
 ? 
 ! Extra }, or forgotten $.
 <recently read> \egroup 
                         
-l.188 ... kota \rightarrow \textrm{kota  ma  Ala}}
+l.189 ... kota \rightarrow \textrm{kota  ma  Ala}}
                                                   
 ? 
 
@@ -830,7 +830,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.189 \end{zadanie}
+l.190 \end{zadanie}
                    
 ? 
 
@@ -840,7 +840,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.189 \end{zadanie}
+l.190 \end{zadanie}
                    
 ? 
 
@@ -850,19 +850,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.189 \end{zadanie}
+l.190 \end{zadanie}
                    
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.189 \end{zadanie}
+l.190 \end{zadanie}
                    
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.189 \end{zadanie}
+l.190 \end{zadanie}
                    
 ? 
 
@@ -872,17 +872,17 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.191 \\P
+l.192 \\P
          oproś użytkownika o wpisanie jakiegoś słowa i wyświetl wszystk...
 
 ? 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--228
+Underfull \hbox (badness 10000) in paragraph at lines 216--229
 
  []
 
@@ -893,50 +893,89 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.229 \\S
+l.230 \\S
          twórz tablicę dwuwymiarową[10][10] i wypełnij ją tabliczką mn...
 
 ? 
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 259--261
 
-! Package inputenc Error: Invalid UTF-8 byte sequence.
+ []
 
-See the inputenc package documentation for explanation.
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.235 ...ric; //Biblioteka w ktorej znajduja się 
-                                                  listy
-? 
-[4] [5] [6]
+l.280 \\S
+         ystem Martingale'a to system bukmacherski który polega na podwajan...
 
-! LaTeX Error: \begin{thebibliography} on input line 258 ended by \end{document
+? 
+<bloczki.png, id=226, 561.59813pt x 449.42906pt>
+File: bloczki.png Graphic file (type png)
+<use bloczki.png>
+Package pdftex.def Info: bloczki.png  used on input line 282.
+(pdftex.def)             Requested size: 477.36066pt x 382.0165pt.
+[5 <./bloczki.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 287--288
+
+ []
+
+
+Overfull \hbox (59.15115pt too wide) in paragraph at lines 313--314
+[][][]$\OT4/cmtt/m/n/10 https : / / automatykanacodzien . pl / 2020 / 07 / 24 /
+ kompilacja-[]i-[]uruchomienie-[]kodu-[]c-[]w-[]linii-[]polecen-[]windows-[]lin
+ux/$[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--320
+[][][]$\OT4/cmtt/m/n/10 https : / / docs . microsoft . com / pl-[]pl / dotnet /
+ csharp / programming-[]guide / file-[]system /
+ []
+
+[6pdfTeX warning (ext4): destination with the same identifier (name{cite.texboo
+k3}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.320 \end{document}
+                    ]
+
+! LaTeX Error: \begin{thebibliography} on input line 311 ended by \end{document
 }.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.261 \end{document}
+l.320 \end{document}
                     
 ? 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 261.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 261.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 320.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 320.
 (./Poradnik.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 261.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 261.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 320.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 320.
 Package rerunfilecheck Info: File `Poradnik.out' has not changed.
-(rerunfilecheck)             Checksum: DE2035C064B39181C0C6F9697E594CF2;816.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 261.
+(rerunfilecheck)             Checksum: 5A90AD8919398268274AF052032DA95A;953.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 320.
  )
 (\end occurred inside a group at level 1)
 
-### semi simple group (level 1) entered at line 258 (\begingroup)
+### semi simple group (level 1) entered at line 311 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 18363 strings out of 481239
- 341198 string characters out of 5920377
- 924157 words of memory out of 5000000
- 33136 multiletter control sequences out of 15000+600000
+ 18437 strings out of 481239
+ 342162 string characters out of 5920377
+ 924220 words of memory out of 5000000
+ 33167 multiletter control sequences out of 15000+600000
  542573 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,15n,64p,412b,1211s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -951,10 +990,10 @@ ic/pl/plr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr5.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/public/pl/plsy10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/pl/pltt10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/pl/pltt8.pfb>
-Output written on Poradnik.pdf (6 pages, 94444 bytes).
+Output written on Poradnik.pdf (6 pages, 134285 bytes).
 PDF statistics:
- 290 PDF objects out of 1000 (max. 8388607)
- 270 compressed objects within 3 object streams
- 138 named destinations out of 1000 (max. 500000)
- 117 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 355 PDF objects out of 1000 (max. 8388607)
+ 333 compressed objects within 4 object streams
+ 180 named destinations out of 1000 (max. 500000)
+ 138 words of extra memory for PDF output out of 10000 (max. 10000000)
 

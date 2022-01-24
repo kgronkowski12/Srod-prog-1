@@ -7,6 +7,7 @@
 \newtheorem{definicja}[theorem]{Definicja}
 
 \usepackage{graphicx}
+\graphicspath{ {./} }
 \usepackage{xcolor}
 \usepackage{listings}
 \usepackage{tikz}
@@ -105,7 +106,7 @@ using System;
 
 public class HelloWorld
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
         Console.WriteLine("Jak sie nazywasz?");
         string imie = Console.ReadLine();
@@ -254,8 +255,66 @@ class HelloWorld {
 \end{lstlisting}
 \pagebreak
 \section{Losowanie liczb}
+
+\textbf{new Random()} inicjalizuje nowy pseudolosowy generator liczb, w parametrze można podać ziarno według którego liczby mają się generować. W przypadku gdy w wywołaniu funkcji nie będą podane żadne parametry ziarno zostanie automatycznie ustawione jako czas otwarcia programu, w przeciwieństwie do C nie ma więc potrzeby ustawiania ziarna samodzielnie.
+Aby otrzymać liczbę należy użyć polecenia \textbf{zmienna = random.Next(dolna granica, górna granica + 1)}.
+\\Poniższy program inicjalizuje tablicę o wielkości 100 i wypełnia ją losowymi liczbami z zakresu 0-100:\\\begin{lstlisting}[frame=single]
+using System;
+
+public class Losowanie
+{
+    public static void Main()
+    {
+        int[] tablica = new int[100];
+        Random r = new Random();
+        for(int x=0;x<100;x++){
+            tablica[x] = r.Next(0,101);
+        }
+        foreach(int i in tablica){
+            Console.WriteLine(i);
+        }
+    }
+}
+\end{lstlisting}
+\begin{zadanie}
+\\System Martingale'a to system bukmacherski który polega na podwajaniu swojego zakładu za każdym razem gdy przegrasz grę w ruletkę. Ewentualna wygrana zwraca wszystkie poprzednie przegrane z bonusem orginalnego zakładu.
+\\Czy ten system wydaje się dobrą strategią? Napisz program realizujący system Martingale'a i sprawdź jaką liczbę pieniędzy uda się wygrać komputerowi zanim straci swoje oszczędności jeżeli zacznie z 1000 zł i orginalna stawka będzie wynosić 5 zł tak jak w diagramie bloczkowym:
+\\\includegraphics[scale=0.85]{bloczki}
+\end{zadanie}
 \pagebreak
+\section{Operacje na plikach tekstowych}
+\subsection{Wczytywanie plików}
+Dane z plików tekstowych można wczytywać na różne sposoby - wszystko naraz do jednego łańcucha, do tablicy łańcuchów w której każdy indeks jest jednym wierszem pliku, lub można je wczytywać linijka po linijce. Wszystkie z tych sposobów zostały przedstawione poniżej:\\ 
+\begin{lstlisting}[frame=single]
+using System;
+
+public class Losowanie
+{
+    public static void Main()
+    {
+    	//Caly plik zostal wczytany do linijki text.
+   	 string text = System.IO.File.ReadAllText("\\Text.txt");
+   	 
+   	 //Plik zostaje podzielony na wiersze i wczytany do tablicy lancuchow.
+   	 string[] lines = System.IO.File.ReadAllLines("\\Text.txt");
+   	 
+   	 foreach(line x in System.IO.File.ReadAllText("\\Text.txt")){
+   	 	//Wczytuje linia po linijce w petli
+   	 	Console.WriteLine(line);
+   	 }
+    }
+}
+\end{lstlisting}
+\begin{zadanie}
+W repozytorium znajduje się plik liczby.txt który jest wypełniony liczbami z przedziału [-100 ; 100], wczytaj z niego wszystkie liczby i oblicz ich średnią arytmetyczną oraz sumę.
+\end{zadanie}
 \begin{thebibliography}{9}
 \bibitem{texbook}
-https://automatykanacodzien.pl/2020/07/24/kompilacja-i-uruchomienie-kodu-c-w-linii-polecen-windows-linux/
+\url{https://automatykanacodzien.pl/2020/07/24/kompilacja-i-uruchomienie-kodu-c-w-linii-polecen-windows-linux/}
+\bibitem{texbook2}
+\url{https://pl.wikipedia.org/wiki/Tablica_(informatyka)}
+\bibitem{texbook3}
+\url{https://en.wikipedia.org/wiki/Martingale_(betting_system)}
+\bibitem{texbook3}
+\url{https://docs.microsoft.com/pl-pl/dotnet/csharp/programming-guide/file-system/how-to-read-from-a-text-file}
 \end{document}
