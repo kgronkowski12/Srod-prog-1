@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  25 JAN 2022 15:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  25 JAN 2022 16:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1294,7 +1294,7 @@ ux/$[][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--384
+Underfull \hbox (badness 10000) in paragraph at lines 385--386
 [][][]$\OT4/cmtt/m/n/10 https : / / docs . microsoft . com / pl-[]pl / dotnet /
  csharp / programming-[]guide / file-[]system /
  []
@@ -1304,7 +1304,7 @@ k3}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.384 \end{document}
+l.386 \end{document}
                     ]
 
 ! LaTeX Error: \begin{thebibliography} on input line 375 ended by \end{document
@@ -1314,31 +1314,31 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.384 \end{document}
+l.386 \end{document}
                     
 ? 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 384.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 384.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 386.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 386.
 (./Poradnik.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 384.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 384.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 386.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 386.
 Package rerunfilecheck Info: File `Poradnik.out' has not changed.
 (rerunfilecheck)             Checksum: 44DA11C08468B2FF89BC4413EF452C27;1071.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 384.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 386.
  )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 375 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 18229 strings out of 492982
- 331381 string characters out of 6134895
- 567520 words of memory out of 5000000
- 21255 multiletter control sequences out of 15000+600000
+ 18231 strings out of 492982
+ 331404 string characters out of 6134895
+ 567550 words of memory out of 5000000
+ 21256 multiletter control sequences out of 15000+600000
  13875 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,15n,70p,412b,1190s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1353,10 +1353,10 @@ ic/pl/plr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr5.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/public/pl/plsy10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/pl/pltt10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/pl/pltt8.pfb>
-Output written on Poradnik.pdf (7 pages, 142938 bytes).
+Output written on Poradnik.pdf (7 pages, 143337 bytes).
 PDF statistics:
- 438 PDF objects out of 1000 (max. 8388607)
- 414 compressed objects within 5 object streams
- 235 named destinations out of 1000 (max. 500000)
+ 440 PDF objects out of 1000 (max. 8388607)
+ 416 compressed objects within 5 object streams
+ 236 named destinations out of 1000 (max. 500000)
  154 words of extra memory for PDF output out of 10000 (max. 10000000)
 
