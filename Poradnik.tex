@@ -75,7 +75,7 @@
 
 \maketitle
 \tableofcontents
-
+	
 \pagebreak
 \section{Hello, world!}
 \subsection{Konfigurowanie kompilatora}
@@ -135,6 +135,54 @@ public class HelloWorld
     }
 }
 \end{lstlisting}
+\section{Pętle}
+C\# zawiera wiele rodzaji pętli. Wszystkie z nich są przedstawione poniżej. Większość z nich jest wam zapewnie dobrze znana, ale zwróćcie szczególną uwagę na jedną specjalną do języka C\# - foreach.\\
+\begin{lstlisting}[frame=single]
+using System;
+
+class Contains {
+  static void Main() {
+	int tablica[10] = new int[10];
+	//Petla for
+  for(int x=0;x<10;x++){
+		Console.WriteLine(tablica[x]);
+	}
+	
+	//Petla while
+	int x = 0
+	while(x<10){
+		Console.WriteLine(tablica[x]);
+		x++;
+	}
+
+	//Petla foreach
+	foreach(int x in tablica){
+		Console.WriteLine(tablica[x]);
+  }
+}
+\end{lstlisting}\\
+\textbf{for} – pętla, którą zazwyczaj będziemy używać kiedy będziemy chcieli wykonać kod określoną ilość razy.\\\addvspace{5}
+\textbf{while} – ta pętla ma prostszą budowę niż poprzednia ponieważ zawiera jedynie warunek wykonania. \\\addvspace{5}
+\textbf{foreach} – ostatnia z omawianych pętli. W tym wypadku mamy specyficzny rodzaj pętli używany konkretnie do działania na kolejnych elementach wszelkiego rodzaju list, kolekcji itd.\\\addvspace{35}
+\\Oprócz pętli potrzebnymi narzędziami są również instrukcje \textbf{if} oraz \textbf{else}. Działają one tak samo jak w C. Przykłady ich użycia są pokazane poniżej.\\
+\begin{lstlisting}[frame=single]
+using System;
+
+class Contains {
+  static void Main() {
+
+	int x = 15;
+	int y = 30;
+
+	if(x+y>10){
+		Console.WriteLine("x + y > 10");
+	}
+	else{
+		Console.WriteLine("x + y < 10");
+	}
+}
+\end{lstlisting}\\
+\pagebreak
 \section{Operowanie na danych}
 \subsection{String.Contains}
 \textbf{String.Contains()} jest bardzo użyteczną funkcją, która sprawdza czy gdziekolwiek w jakimś łańcuchu można znaleźć inny łańcuch. Zwraca wartość boolowską. Przykładem jego zastosowania jest sprawdzenie czy w jakimś słowie występuje litera 'a' :\\
