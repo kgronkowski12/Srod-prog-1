@@ -13,3 +13,4 @@
 \contentsline {section}{\numberline {4}Losowanie liczb}{5}{section.4}%
 \contentsline {section}{\numberline {5}Operacje na plikach tekstowych}{6}{section.5}%
 \contentsline {subsection}{\numberline {5.1}Wczytywanie plików}{6}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Edycja plików tekstowych}{6}{subsection.5.2}%

@@ -115,7 +115,7 @@ public class HelloWorld
 }
 \end{lstlisting}
 \subsection{Konwersja danych}
-Należy wziąć pod uwagę, że \textbf{Console.ReadLine()} zawsze wczytuje wartość string, gdybyśmy chcieli aby program wczytywał liczbę zamiast imienia (np wiek), musielibyśmy przekonwertować string do wartości int.\\
+Należy wziąć pod uwagę, że \textbf{Console.ReadLine()} zawsze wczytuje wartość string, gdybyśmy chcieli aby program wczytywał liczbę zamiast imienia, musielibyśmy przekonwertować string do wartości int.\\
 Na szczęście jest do tego wbudowana funkcja \textbf{Int32.Parse(string)}. Przykład jej użycia:\\
 \begin{lstlisting}[frame=single]
 using System;
@@ -143,13 +143,13 @@ using System;
 
 class Contains {
     static void Main() {
-    	Console.WriteLine("Wpisz slowo bez litery a");
+    	  Console.WriteLine("Wpisz slowo bez litery a");
         string x = Console.ReadLine();
         if(x.Contains('a')){
-        	Console.WriteLine("W tym slowie nie ma litery a.");
+        	Console.WriteLine("W tym slowie jest litera a.");
         }
         else{
-        	Console.WriteLine("W tym slowie jest litera a.");
+        	Console.WriteLine("W tym slowie nie ma litery a.");
         }
     }
 }
@@ -169,7 +169,7 @@ class Replace {
 }
 \end{lstlisting}
 \subsection{String.Split}
-\textbf{String.Split()} rozdziela łańcuch na tablicę mniejszych łańcuchów rozdzielonych za pomocą łańcucha podanego podczas wywoływania funkcji. Bardzo użyteczne jeżeli chcemy odczytać dane rozdzielonych za pomocą nowej linijki ('\n') albo spacji. Przykład użycia:\\
+\textbf{String.Split()} rozdziela łańcuch na tablicę mniejszych łańcuchów rozdzielonych za pomocą łańcucha podanego podczas wywoływania funkcji. Bardzo użyteczne jeżeli chcemy odczytać dane rozdzielone za pomocą nowej linijki albo spacji. Przykład użycia:\\
 \begin{lstlisting}[frame=single]
 using System;
 
@@ -194,7 +194,7 @@ class Split {
 \pagebreak
 \section{Tablice i listy}
 \subsection{Tablice jednowymiarowe}
-Tablica to zbiór uporządkowanych elementów tego samego typu. Każdy element można wyczytać podając numer jego indeksu. Przykład zastosowania tablicy aby wyczytać ile razy każda cyfra występuje w jakiejś liczbie.\\
+Tablica to zbiór uporządkowanych elementów tego samego typu. Każdy element można wyczytać podając numer jego indeksu. Przykład zastosowania tablicy aby sprawdzić ile razy każda cyfra występuje w jakiejś liczbie.\\
 \begin{lstlisting}[frame=single]
 using System;
 
@@ -214,7 +214,7 @@ class HelloWorld {
 \end{lstlisting}
 \subsection{Tablice wielowymiarowe}
 Najprostszy sposób patrzenia na tablice dwuwymiarową tablica[k][w] jest wyobrażenie sobie tabelki o k kolumnach i w wierszach.\\
-Dla przykładu, wyobraźmy sobie tablicę dwuwymiarową [5][3] wypełnioną w następujący sposób:
+Dla przykładu, popatrzmy na tablicę dwuwymiarową [5][3] wypełnioną w następujący sposób:
 \\\\
 \begin{tikzpicture}
 
@@ -256,7 +256,7 @@ class HelloWorld {
 \pagebreak
 \section{Losowanie liczb}
 
-\textbf{new Random()} inicjalizuje nowy pseudolosowy generator liczb, w parametrze można podać ziarno według którego liczby mają się generować. W przypadku gdy w wywołaniu funkcji nie będą podane żadne parametry ziarno zostanie automatycznie ustawione jako czas otwarcia programu, w przeciwieństwie do C nie ma więc potrzeby ustawiania ziarna samodzielnie.
+\textbf{new Random()} inicjalizuje nowy pseudolosowy generator liczb. W parametrze można podać ziarno według którego liczby mają się generować. W przypadku gdy w wywołaniu funkcji nie będą podane żadne parametry ziarno zostanie automatycznie ustawione jako czas otwarcia programu, w przeciwieństwie do C nie ma więc potrzeby ustawiania ziarna samodzielnie.
 Aby otrzymać liczbę należy użyć polecenia \textbf{zmienna = random.Next(dolna granica, górna granica + 1)}.
 \\Poniższy program inicjalizuje tablicę o wielkości 100 i wypełnia ją losowymi liczbami z zakresu 0-100:\\\begin{lstlisting}[frame=single]
 using System;
@@ -288,7 +288,7 @@ Dane z plików tekstowych można wczytywać na różne sposoby - wszystko naraz 
 \begin{lstlisting}[frame=single]
 using System;
 
-public class Losowanie
+public class CzytaniePlikow
 {
     public static void Main()
     {
@@ -308,6 +308,22 @@ public class Losowanie
 \begin{zadanie}
 W repozytorium znajduje się plik liczby.txt który jest wypełniony liczbami z przedziału [-100 ; 100], wczytaj z niego wszystkie liczby i oblicz ich średnią arytmetyczną oraz sumę.
 \end{zadanie}
+\subsection{Edycja plików tekstowych}
+Biblioteka System.IO zawiera nie tylko funkcje do wczytywania plików tekstowych ale i do tworzenia i edycji plików. Służy do tego funkcja \textbf{System.IO.File.WriteAllText()}. Oto przykład jej zastosowania:\\
+\begin{lstlisting}[frame=single]
+using System;
+
+public class EdycjaPLikow
+{
+    public static void Main()
+    {
+    	 string zawartosc = "Hello World!";
+		   System.IO.File.WriteAllText("\\Text.txt", zawartosc); //Wypelni plik Text.txt lancuchem zawartosc
+	
+		   Console.WriteLine(System.IO.File.ReadAllText("\\Text.txt")); //Wyswietli zawartosc pliku Text
+    }
+}
+\end{lstlisting}
 \begin{thebibliography}{9}
 \bibitem{texbook}
 \url{https://automatykanacodzien.pl/2020/07/24/kompilacja-i-uruchomienie-kodu-c-w-linii-polecen-windows-linux/}
